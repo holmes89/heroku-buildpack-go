@@ -1,10 +1,10 @@
 # Heroku Buildpack for Go
 
-[![CircleCI](https://circleci.com/gh/heroku/heroku-buildpack-go.svg?style=svg)](https://circleci.com/gh/heroku/heroku-buildpack-go)
-
 ![Heroku Buildpack for Go](https://cloud.githubusercontent.com/assets/51578/15877053/53506724-2cdf-11e6-878c-e2ef60ba741f.png)
 
-This is the official [Heroku buildpack][buildpack] for [Go][go].
+This is a clone of the official [Heroku buildpack][buildpack] for [Go][go].
+
+Major changes are around LD Flags. Instead of using the symbol value structure I allow users to pass full LD flags for build values. Use environment variable `GO_LD_FLAGS` to set the value.
 
 ## Getting Started
 
