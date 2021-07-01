@@ -365,9 +365,9 @@ No official support is provided for unreleased versions of Go.
 to set the value of a string at link time. This can be done by setting
 `GO_LINKER_SYMBOL` and `GO_LINKER_VALUE` in the application's config before
 pushing code. If `GO_LINKER_SYMBOL` is set, but `GO_LINKER_VALUE` isn't set then
-`GO_LINKER_VALUE` defaults to [`$SOURCE_VERSION`][source-version].
+`GO_LINKER_VALUE` defaults to [`$SOURCE_VERSION`][source-version].~
 
-This can be used to embed the commit sha, or other build specific data directly
+~This can be used to embed the commit sha, or other build specific data directly
 into the compiled executable.~
 
 ## Testpack
