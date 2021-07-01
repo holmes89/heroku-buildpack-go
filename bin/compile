@@ -392,7 +392,7 @@ determineTool
 ver=$(expandVer $ver)
 
 # If $GO_LD_FLAGS is set, tell the linker to DTRT
-if [ -n "${GO_LD_FLAGS}"]; then
+if [ -n "${GO_LD_FLAGS}" ]; then
     step "Found LD Flags: ${GO_LD_FLAGS}"
     FLAGS+=(-ldflags "${GO_LD_FLAGS}")
 fi
